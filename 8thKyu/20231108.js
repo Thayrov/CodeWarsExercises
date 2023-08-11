@@ -14,6 +14,36 @@ In JavaScript, the toUpperCase and toLowerCase methods for strings do have some 
 For instance, the character "ß" (LATIN SMALL LETTER SHARP S) used in German words, when converted to uppercase using JavaScript's toUpperCase method, becomes "SS". Thus, the length of the string increases. */
 
 const STRANGE_STRING = 'ß';
+
+//  The Test
 console.log(
 	STRANGE_STRING.toUpperCase().toLowerCase().length > STRANGE_STRING.length,
 ); // This will output true
+
+//############################################################################
+
+//Even or Odd
+
+//  The Problem
+/* Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers. */
+
+//  The Solution
+
+const evenOrOdd = n => {
+	return n % 2 === 0 ? 'Even' : 'Odd';
+};
+
+//  The Test
+console.log(evenOrOdd(2)); // Expected output: Even
+console.log(evenOrOdd(3)); // Expected output: Odd
+console.log(evenOrOdd(0)); // Expected output: Even
+
+//############################################################################
+
+//Title
+
+//  The Problem
+
+//  The Solution
+
+//  The Test
