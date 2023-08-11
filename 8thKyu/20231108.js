@@ -62,6 +62,26 @@ console.log(multiply(4, 5)); // Expected output: 20
 
 //############################################################################
 
+//Sum of positive
+
+//  The Problem
+/* You get an array of numbers, return the sum of all of the positives ones.
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+Note: if there is nothing to sum, the sum is default to 0. */
+
+//  The Solution
+
+const positiveSum = arr => {
+	return arr.reduce((acc, num) => (num > 0 ? acc + num : acc), 0);
+};
+
+// The Test
+console.log(positiveSum([1, -4, 7, 12])); // Expected output: 20
+console.log(positiveSum([-1, -2, -3, -4])); // Expected output: 0
+console.log(positiveSum([])); // Expected output: 0
+
+//############################################################################
+
 //
 
 //  The Problem
