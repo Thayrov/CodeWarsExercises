@@ -43,6 +43,36 @@ console.log(isDivisible(15)); // true (There are no divisors provided, so it sho
 
 //############################################################################
 
+//Filter the number
+
+//  The Problem
+/* Filter the number
+Oh, no! The number has been mixed up with the text. Your goal is to retrieve the number from the text, can you return the number back to its original state?
+
+Task
+Your task is to return a number from a string.
+
+Details
+You will be given a string of numbers and letters mixed up, you have to return all the numbers in that string in the order they occur.*/
+
+//  The Solution
+
+const filterString = str =>
+	parseInt(
+		str
+			.split('')
+			.filter(char => !isNaN(char))
+			.join(''),
+	);
+
+//  The Test
+console.log(filterString('abc123def456')); // 123456
+console.log(filterString('a1b2c3d4e5f6')); // 123456
+console.log(filterString('abcdef')); // NaN (no numbers in the string)
+console.log(filterString('123456')); // 123456 (only numbers in the string)
+
+//############################################################################
+
 //
 
 //  The Problem
