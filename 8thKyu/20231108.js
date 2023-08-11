@@ -40,7 +40,29 @@ console.log(evenOrOdd(0)); // Expected output: Even
 
 //############################################################################
 
-//Title
+//Multiply
+
+//  The Problem
+/* This code does not execute properly. Try to figure out why. 
+
+function multiply(a, b){
+  a * b
+}*/
+
+//  The Solution
+/*  The problem with the given code is that it doesn't return any value from the multiply function. We just have the multiplication operation inside the function, but we're not doing anything with the result. To fix it, we only have to return the result of the multiplication */
+
+function multiply(a, b) {
+	return a * b;
+}
+
+// The Test
+console.log(multiply(2, 3)); // Expected output: 6
+console.log(multiply(4, 5)); // Expected output: 20
+
+//############################################################################
+
+//
 
 //  The Problem
 
