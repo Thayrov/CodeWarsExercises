@@ -18,13 +18,14 @@ Your function should only return a number, not the explanation about how you get
 
 //  The Solution
 
-const getSum = (x, y) => {
+/* const getSum = (x, y) => {
 	let sum = 0;
 	for (let i = Math.min(x, y); i <= Math.max(x, y); i++) {
 		sum += i;
 	}
 	return sum;
-};
+}; */
+const GetSum = (a, b) => ((a + b) * (Math.abs(a - b) + 1)) / 2;
 
 //  The Test
 /* console.log(getSum(1, 0)); // 1
