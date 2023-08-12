@@ -27,12 +27,12 @@ const getSum = (x, y) => {
 };
 
 //  The Test
-console.log(getSum(1, 0)); // 1
+/* console.log(getSum(1, 0)); // 1
 console.log(getSum(1, 2)); // 3
 console.log(getSum(0, 1)); // 1
 console.log(getSum(1, 1)); // 1
 console.log(getSum(-1, 0)); // -1
-console.log(getSum(-1, 2)); // 2
+console.log(getSum(-1, 2)); // 2 */
 
 //############################################################################
 

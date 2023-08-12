@@ -16,9 +16,9 @@ For instance, the character "ß" (LATIN SMALL LETTER SHARP S) used in German wor
 const STRANGE_STRING = 'ß';
 
 //  The Test
-console.log(
+/* console.log(
 	STRANGE_STRING.toUpperCase().toLowerCase().length > STRANGE_STRING.length,
-); // This will output true
+); // This will output true */
 
 //############################################################################
 
@@ -34,9 +34,9 @@ const evenOrOdd = n => {
 };
 
 //  The Test
-console.log(evenOrOdd(2)); // Expected output: Even
+/* console.log(evenOrOdd(2)); // Expected output: Even
 console.log(evenOrOdd(3)); // Expected output: Odd
-console.log(evenOrOdd(0)); // Expected output: Even
+console.log(evenOrOdd(0)); // Expected output: Even */
 
 //############################################################################
 
@@ -57,8 +57,8 @@ function multiply(a, b) {
 }
 
 // The Test
-console.log(multiply(2, 3)); // Expected output: 6
-console.log(multiply(4, 5)); // Expected output: 20
+/* console.log(multiply(2, 3)); // Expected output: 6
+console.log(multiply(4, 5)); // Expected output: 20 */
 
 //############################################################################
 
@@ -76,9 +76,9 @@ const positiveSum = arr => {
 };
 
 // The Test
-console.log(positiveSum([1, -4, 7, 12])); // Expected output: 20
+/* console.log(positiveSum([1, -4, 7, 12])); // Expected output: 20
 console.log(positiveSum([-1, -2, -3, -4])); // Expected output: 0
-console.log(positiveSum([])); // Expected output: 0
+console.log(positiveSum([])); // Expected output: 0 */
 
 //############################################################################
 
@@ -100,10 +100,10 @@ Zero (0) is not checked for any specific sign. Negative zeros make no mathematic
 const makeNegative = n => (n > 0 ? -n : n);
 
 //  The Test
-console.log(makeNegative(1)); // Expected output: -1
+/* console.log(makeNegative(1)); // Expected output: -1
 console.log(makeNegative(-5)); // Expected output: -5
 console.log(makeNegative(0)); // Expected output: 0
-console.log(makeNegative(0.12)); // Expected output: -0.12
+console.log(makeNegative(0.12)); // Expected output: -0.12 */
 
 //############################################################################
 
@@ -137,11 +137,11 @@ const quadrant = (x, y) => {
 };
 
 //  The Test
-console.log(quadrant(1, 2)); // Expected output: 1
+/* console.log(quadrant(1, 2)); // Expected output: 1
 console.log(quadrant(3, 5)); // Expected output: 1
 console.log(quadrant(-10, 100)); // Expected output: 2
 console.log(quadrant(-1, -9)); // Expected output: 3
-console.log(quadrant(19, -56)); // Expected output: 4
+console.log(quadrant(19, -56)); // Expected output: 4 */
 
 //############################################################################
 
