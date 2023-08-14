@@ -11,10 +11,7 @@ The input string will only consist of lower case letters and/or spaces. */
 
 //  The Solution
 
-const getCount = s => {
-	const vowels = ['a', 'e', 'i', 'o', 'u'];
-	return s.split('').filter(l => vowels.includes(l)).length;
-};
+const getCount = s => s.replace(/[^aeiou]/gi, '').length;
 
 //  The Test
 /* console.log(getCount("example"));     // 3
