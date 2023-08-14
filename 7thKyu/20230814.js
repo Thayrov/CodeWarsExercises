@@ -38,7 +38,7 @@ Note: for this kata y isn't considered a vowel. */
 
 //  The Solution
 
-const disemvowel = s => s.replace(/[aeiouAEIOU]/g, '');
+const disemvowel = s => s.replace(/[aeiou]/gi, '');
 
 //  The Test
 
