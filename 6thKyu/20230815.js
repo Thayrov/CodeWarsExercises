@@ -16,16 +16,46 @@ Error checking for text strings or other invalid inputs is not required, only va
 
 //  The Solution
 
-const narcissistic = (n) => {
-    const digits = n.toString().split('');
-    const m = digits.length;
-    const sum = digits.reduce((acc, digit) => acc + (+digit) ** m, 0);
-    return sum === n;
-}
-
+const narcissistic = n => {
+	const digits = n.toString().split('');
+	const m = digits.length;
+	const sum = digits.reduce((acc, digit) => acc + (+digit) ** m, 0);
+	return sum === n;
+};
 
 //  The Test
 /* console.log(narcissistic(153));  // true
 console.log(narcissistic(1652)); // false */
+
+//############################################################################
+
+//Replace With Alphabet Position
+
+//  The Problem
+/* Welcome.
+
+In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+
+If anything in the text isn't a letter, ignore it and don't return it.
+
+"a" = 1, "b" = 2, etc.
+
+Example
+alphabetPosition("The sunset sets at twelve o' clock.")
+Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" ( as a string ) */
+
+//  The Solution
+
+const alphabetPosition = text =>
+	text
+		.toUpperCase()
+		.replace(/[^A-Z]/g, '')
+		.split('')
+		.map(ch => ch.charCodeAt(0) - 64)
+		.join(' ');
+
+//  The Test
+console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+// "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"
 
 //############################################################################
