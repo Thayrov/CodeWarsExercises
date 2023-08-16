@@ -14,17 +14,12 @@ Output string must be two numbers separated by a single space, and highest numbe
 
 //  The Solution
 
-const highAndLow = s => {
-	const numArray = s.splice(' ');
-	const max = Math.max(numArray);
-	const min = Math.min(numArray);
-	if (max === min) {
-		return s;
-	} else {
-		return max + ' ' + min;
-	}
-};
+const highAndLow = s =>
+	`${Math.max(...s.split(' '))} ${Math.min(...s.split(' '))}`;
 
 //  The Test
-
+/* console.log(highAndLow("1 2 3 4 5"));       // "5 1"
+console.log(highAndLow("1 2 -3 4 5"));      // "5 -3"
+console.log(highAndLow("1 9 3 4 -5"));      // "9 -5"
+ */
 //############################################################################
