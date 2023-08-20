@@ -11,7 +11,11 @@ isIsogram "Dermatoglyphics" = true
 isIsogram "moose" = false
 isIsogram "aba" = false */
 //  The Solution
-const isIsogram = () => {};
-//  The Test
+const isIsogram = s => new Set(s.toLowerCase()).size === s.length;
 
+//  The Test
+/* console.log(isIsogram("Dermatoglyphics")); // true
+console.log(isIsogram("aba"));             // false
+console.log(isIsogram("moOse"));           // false
+ */
 //############################################################################
